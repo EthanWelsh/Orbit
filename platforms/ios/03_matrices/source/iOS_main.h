@@ -13,7 +13,11 @@
 #include <glm/glm.hpp>
 
 extern glm::vec2 SCREEN_SIZE;
+
 int iOS_main();
+
 void Render();
+
 void Update(float secondsElapsed);
+
 #endif

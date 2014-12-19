@@ -1,7 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11759cab-941f-45ff-b7eb-3c307fc089a7" name="Default" comment="" />
+    <list default="true" id="11759cab-941f-45ff-b7eb-3c307fc089a7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/sys/01_project_skeleton-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/sys/01_project_skeleton-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/sys/01_project_skeleton-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/sys/01_project_skeleton-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/sys/01_project_skeleton-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/sys/01_project_skeleton-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/sys/01_project_skeleton-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/sys/01_project_skeleton-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/sys/01_project_skeleton-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/sys/01_project_skeleton-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/sys/01_project_skeleton-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/sys/01_project_skeleton-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/sys/01_project_skeleton-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/sys/01_project_skeleton-Prefix.pch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/sys/01_project_skeleton-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/sys/01_project_skeleton-Prefix.pch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/sys/01_project_skeleton-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/sys/01_project_skeleton-Prefix.pch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/sys/01_project_skeleton-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/sys/01_project_skeleton-Prefix.pch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/sys/01_project_skeleton-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/sys/01_project_skeleton-Prefix.pch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/sys/01_project_skeleton-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/sys/01_project_skeleton-Prefix.pch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Bitmap.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Bitmap.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Bitmap.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Bitmap.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Bitmap.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Bitmap.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Bitmap.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Bitmap.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Bitmap.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Bitmap.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Bitmap.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Camera.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Camera.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Camera.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Camera.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Camera.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Camera.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Camera.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Camera.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Helper.cpp" afterPath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Helper.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/02_textures/source/Helper.cpp" afterPath="$PROJECT_DIR$/platforms/linux/02_textures/source/Helper.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Helper.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/02_textures/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/02_textures/source/Helper.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/03_matrices/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/03_matrices/source/Helper.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/04_camera/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/04_camera/source/Helper.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/Helper.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/Helper.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/Helper.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/01_project_skeleton/source/Program.cpp" afterPath="$PROJECT_DIR$/source/01_project_skeleton/source/Program.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/Program.h" afterPath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/01_project_skeleton/source/Shader.cpp" afterPath="$PROJECT_DIR$/source/01_project_skeleton/source/Shader.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/Shader.h" afterPath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/01_project_skeleton/source/Shader.h" afterPath="$PROJECT_DIR$/source/01_project_skeleton/source/Shader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Texture.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Texture.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Texture.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Texture.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Texture.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Texture.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Texture.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Texture.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Texture.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Texture.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Texture.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/WLAppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/WLAppDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/source/ios_specific/WLAppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/source/ios_specific/WLAppDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/source/ios_specific/WLAppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/source/ios_specific/WLAppDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/ios_specific/WLAppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/ios_specific/WLAppDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/ios_specific/WLAppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/ios_specific/WLAppDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/ios_specific/WLAppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/ios_specific/WLAppDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/ext.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/ext.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/fwd.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/fwd.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glew/src/glew.c" afterPath="$PROJECT_DIR$/source/common/thirdparty/glew/src/glew.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glew/src/glewinfo.c" afterPath="$PROJECT_DIR$/source/common/thirdparty/glew/src/glewinfo.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/iOS_main.h" afterPath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/iOS_main.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/source/iOS_main.h" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/source/iOS_main.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/source/iOS_main.h" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/source/iOS_main.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/iOS_main.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/iOS_main.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/iOS_main.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/iOS_main.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/iOS_main.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/iOS_main.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp" afterPath="$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat2x2.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat2x2.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat2x3.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat2x3.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat2x4.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat2x4.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat3x2.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat3x2.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat3x3.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat3x3.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat3x4.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat3x4.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat4x2.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat4x2.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat4x3.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat4x3.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat4x4.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat4x4.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/gtc/noise.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/gtc/noise.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/osx/platform_osx.mm" afterPath="$PROJECT_DIR$/platforms/osx/platform_osx.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/windows/platform_windows.cpp" afterPath="$PROJECT_DIR$/platforms/windows/platform_windows.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/stb_image/stb_image.h" afterPath="$PROJECT_DIR$/source/common/thirdparty/stb_image/stb_image.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/gtc/ulp.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/gtc/ulp.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glew/src/visualinfo.c" afterPath="$PROJECT_DIR$/source/common/thirdparty/glew/src/visualinfo.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Orbit.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,14 +139,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2081339" vertical-offset="2039" max-vertical-offset="2457">
-              <caret line="118" column="28" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1538" max-vertical-offset="2236">
+              <caret line="166" column="1" selection-start-line="166" selection-start-column="1" selection-end-line="166" selection-end-column="1" />
               <folding>
-                <element signature="e#655#675#0" expanded="true" />
-                <marker date="1418972513000" expanded="true" signature="750:790" placeholder="..." />
+                <element signature="e#50#70#0" expanded="true" />
+                <element signature="e#145#164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Program.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/Program.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="719" max-vertical-offset="1378">
+              <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+              <folding>
+                <element signature="e#615#635#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shader.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/Shader.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1560">
+              <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shader.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/Shader.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8027314" vertical-offset="277" max-vertical-offset="1040">
+              <caret line="62" column="39" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+              <folding>
+                <element signature="e#628#648#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,11 +190,17 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Orbit/source/Shader.h" />
         <option value="$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp" />
+        <option value="$PROJECT_DIR$/source/01_project_skeleton/source/Program.cpp" />
+        <option value="$PROJECT_DIR$/source/01_project_skeleton/source/Shader.cpp" />
+        <option value="$PROJECT_DIR$/source/01_project_skeleton/source/Shader.h" />
       </list>
     </option>
   </component>
@@ -56,7 +213,7 @@
     <option name="width" value="1229" />
     <option name="height" value="777" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -79,6 +236,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -122,14 +280,9 @@
               <option name="myItemId" value="01_project_skeleton" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,6 +293,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="LayoutCode.rearrangeEntriesC/C++/Objective-C" value="false" />
     <property name="LayoutCode.rearrangeEntries" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -148,29 +302,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.01_project_skeleton">
-    <configuration default="false" name="01_project_skeleton" type="AppleRunConfiguration" factoryName="Application" temporary="true" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Orbit" TARGET_NAME="01_project_skeleton" CONFIG_NAME="Debug" SCHEME_NAME="01_project_skeleton" RUN_TARGET_PROJECT_NAME="Orbit" RUN_TARGET_NAME="01_project_skeleton" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="false" name="01_project_skeleton" type="AppleRunConfiguration" factoryName="Application" temporary="true" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Orbit" TARGET_NAME="01_project_skeleton" CONFIG_NAME="Debug" SCHEME_NAME="01_project_skeleton" RUN_TARGET_PROJECT_NAME="Orbit" RUN_TARGET_NAME="01_project_skeleton" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <option name="name" value="Go application" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
-      <option name="scriptName" value="" />
-      <option name="scriptArguments" value="" />
-      <option name="builderArguments" value="" />
-      <option name="goBuildBeforeRun" value="false" />
-      <option name="goOutputDir" value="" />
-      <option name="workingDir" value="" />
-      <option name="envVars" value="" />
-      <option name="goVetEnabled" value="false" />
-      <module name="" />
       <method />
     </configuration>
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Orbit" TARGET_NAME="Orbit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Orbit" RUN_TARGET_NAME="Orbit" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -182,27 +320,6 @@
     </configuration>
     <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS="FALSE" TEST_MODE="SUITE_TEST">
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="GoTestConfiguration" factoryName="Go Test">
-      <option name="name" value="Go Test" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
-      <option name="envVars" value="" />
-      <option name="testRunnerArgs" value="" />
-      <option name="testTargetType" value="Package" />
-      <option name="packageName" value="" />
-      <option name="packageDir" value="" />
-      <option name="testFile" value="" />
-      <option name="testArgs" value="" />
-      <option name="workingDir" value="" />
-      <option name="executeWhat" value="Test" />
-      <option name="filter" value="" />
-      <option name="useShortRun" value="false" />
-      <option name="testBeforeBenchmark" value="false" />
-      <option name="goVetEnabled" value="false" />
-      <module name="" />
       <method />
     </configuration>
     <configuration default="true" type="OCGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Orbit" TARGET_NAME="Orbit" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
@@ -240,23 +357,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="23" width="1229" height="777" extended-state="0" />
+    <frame x="51" y="23" width="1229" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -277,11 +394,66 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#70#0" expanded="true" />
+            <element signature="e#145#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#70#0" expanded="true" />
+            <element signature="e#145#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#70#0" expanded="true" />
+            <element signature="e#145#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#70#0" expanded="true" />
+            <element signature="e#145#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#70#0" expanded="true" />
+            <element signature="e#145#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="appcode.project-settings://425167e6">
       <provider selected="true" editor-type-id="AppCode.ProjectSettings">
         <state />
@@ -289,11 +461,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2081339" vertical-offset="2039" max-vertical-offset="2457">
-          <caret line="118" column="28" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1538" max-vertical-offset="2236">
+          <caret line="166" column="1" selection-start-line="166" selection-start-column="1" selection-end-line="166" selection-end-column="1" />
           <folding>
-            <element signature="e#655#675#0" expanded="true" />
-            <marker date="1418972513000" expanded="true" signature="750:790" placeholder="..." />
+            <element signature="e#50#70#0" expanded="true" />
+            <element signature="e#145#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/Program.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="719" max-vertical-offset="1378">
+          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+          <folding>
+            <element signature="e#615#635#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/Shader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1560">
+          <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/Shader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8027314" vertical-offset="277" max-vertical-offset="1040">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+          <folding>
+            <element signature="e#628#648#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,22 +1,24 @@
-#include "Helper.h"
-
-std::string GetProcessPath() {
+std::string GetProcessPath()
+{
 #if defined( PLATFORM_OSX )
-	char exe_file[PATH_MAX + 1];
-	CFBundleRef mainBundle = CFBundleGetMainBundle();
-	if (mainBundle) {
-		CFURLRef mainURL = CFBundleCopyBundleURL(mainBundle);
+    char exe_file[PATH_MAX + 1];
+    CFBundleRef mainBundle = CFBundleGetMainBundle();
+    if (mainBundle)
+    {
+        CFURLRef mainURL = CFBundleCopyBundleURL(mainBundle);
 
-		if (mainURL) {
-			int ok = CFURLGetFileSystemRepresentation ( mainURL, (Boolean) true, (UInt8*)exe_file, PATH_MAX );
+        if (mainURL)
+        {
+            int ok = CFURLGetFileSystemRepresentation(mainURL, (Boolean) true, (UInt8 *) exe_file, PATH_MAX);
 
-			if (ok) {
-				return std::string(exe_file) + "/";
-			}
-		}
-	}
+            if (ok)
+            {
+                return std::string(exe_file) + "/";
+            }
+        }
+    }
 
-	return "./";
+    return "./";
 #elif defined( PLATFORM_LINUX )
 	char exe_file[PATH_MAX + 1];
 	int size;

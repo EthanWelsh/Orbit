@@ -1,21 +1,3 @@
-/*
- tdogl::Shader
- 
- Copyright 2012 Thomas Dalling - http://tomdalling.com/
- 
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
- 
- http://www.apache.org/licenses/LICENSE-2.0
- 
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
- */
-
 #include "Shader.h"
 #include <stdexcept>
 #include <fstream>
@@ -24,9 +6,7 @@
 
 using namespace tdogl;
 
-Shader::Shader(const std::string &shaderCode, GLenum shaderType) :
-        _object(0),
-        _refCount(NULL)
+Shader::Shader(const std::string &shaderCode, GLenum shaderType) : _object(0), _refCount(NULL)
 {
     //create the shader object
     _object = glCreateShader(shaderType);
@@ -43,6 +23,7 @@ Shader::Shader(const std::string &shaderCode, GLenum shaderType) :
     //throw exception if compile error occurred
     GLint status;
     glGetShaderiv(_object, GL_COMPILE_STATUS, &status);
+
     if (status == GL_FALSE)
     {
         std::string msg("Compile failure in shader:\n");
@@ -63,12 +44,12 @@ Shader::Shader(const std::string &shaderCode, GLenum shaderType) :
     *_refCount = 1;
 }
 
-Shader::Shader(const Shader &other) :
-        _object(other._object),
-        _refCount(other._refCount)
+
+Shader::Shader(const Shader &other) : _object(other._object), _refCount(other._refCount)
 {
     _retain();
 }
+
 
 Shader::~Shader()
 {
@@ -76,10 +57,12 @@ Shader::~Shader()
     if (_refCount) _release();
 }
 
+
 GLuint Shader::object() const
 {
     return _object;
 }
+
 
 Shader &Shader::operator=(const Shader &other)
 {
@@ -89,6 +72,7 @@ Shader &Shader::operator=(const Shader &other)
     _retain();
     return *this;
 }
+
 
 Shader Shader::shaderFromFile(const std::string &filePath, GLenum shaderType)
 {
@@ -109,11 +93,13 @@ Shader Shader::shaderFromFile(const std::string &filePath, GLenum shaderType)
     return shader;
 }
 
+
 void Shader::_retain()
 {
     assert(_refCount);
     *_refCount += 1;
 }
+
 
 void Shader::_release()
 {
@@ -127,4 +113,3 @@ void Shader::_release()
         _refCount = NULL;
     }
 }
-

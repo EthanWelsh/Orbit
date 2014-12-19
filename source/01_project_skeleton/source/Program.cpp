@@ -21,8 +21,7 @@
 
 using namespace tdogl;
 
-Program::Program(const std::vector<Shader> &shaders) :
-        _object(0)
+Program::Program(const std::vector<Shader> &shaders) : _object(0)
 {
     if (shaders.size() <= 0)
         throw std::runtime_error("No shaders were provided to create the program");
@@ -63,6 +62,7 @@ Program::Program(const std::vector<Shader> &shaders) :
     }
 }
 
+
 Program::~Program()
 {
     //might be 0 if ctor fails by throwing exception
@@ -73,6 +73,7 @@ GLuint Program::object() const
 {
     return _object;
 }
+
 
 GLint Program::attrib(const GLchar *attribName) const
 {
@@ -85,6 +86,7 @@ GLint Program::attrib(const GLchar *attribName) const
 
     return attrib;
 }
+
 
 GLint Program::uniform(const GLchar *uniformName) const
 {

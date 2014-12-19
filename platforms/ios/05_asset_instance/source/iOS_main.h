@@ -12,19 +12,25 @@
 // third-party libraries
 #include <glm/glm.hpp>
 
-typedef enum{
-	eGesture_Move_Forward,	//W
-	eGesture_Move_Back,		//S
-	eGesture_Move_Left,		//A
-	eGesture_Move_Right,	//D
-	eGesture_Move_Up,		//Z
-	eGesture_Move_Down,		//X
-	eGesture_None
-}eGesture;
+typedef enum
+{
+    eGesture_Move_Forward,    //W
+    eGesture_Move_Back,        //S
+    eGesture_Move_Left,        //A
+    eGesture_Move_Right,    //D
+    eGesture_Move_Up,        //Z
+    eGesture_Move_Down,        //X
+    eGesture_None
+} eGesture;
 
 extern glm::vec2 SCREEN_SIZE;
+
 int iOS_main();
+
 void Render();
+
 void Update(float secondsElapsed);
+
 void RegisterGesture(eGesture g);
+
 #endif

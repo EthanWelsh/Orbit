@@ -34,10 +34,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include <GL/glew.h>
+
 #if defined(_WIN32)
 #include <GL/wglew.h>
 #elif defined(__APPLE__) && !defined(GLEW_APPLE_GLX)
+
 #include <AGL/agl.h>
+
 #elif !defined(__HAIKU__)
 #include <GL/glxew.h>
 #endif
@@ -61,7 +64,7 @@ typedef struct GLContextStruct
   HDC dc;
   HGLRC rc;
 #elif defined(__APPLE__) && !defined(GLEW_APPLE_GLX)
-  AGLContext ctx, octx;
+    AGLContext ctx, octx;
 #elif !defined(__HAIKU__)
   Display* dpy;
   XVisualInfo* vi;
@@ -71,33 +74,38 @@ typedef struct GLContextStruct
 #endif
 } GLContext;
 
-void InitContext (GLContext* ctx);
-GLboolean CreateContext (GLContext* ctx);
-void DestroyContext (GLContext* ctx);
-void VisualInfo (GLContext* ctx);
-void PrintExtensions (const char* s);
-GLboolean ParseArgs (int argc, char** argv);
+void InitContext(GLContext *ctx);
+
+GLboolean CreateContext(GLContext *ctx);
+
+void DestroyContext(GLContext *ctx);
+
+void VisualInfo(GLContext *ctx);
+
+void PrintExtensions(const char *s);
+
+GLboolean ParseArgs(int argc, char **argv);
 
 int showall = 0;
 int displaystdout = 0;
 int verbose = 0;
 int drawableonly = 0;
 
-char* display = NULL;
+char *display = NULL;
 int visual = -1;
 
-FILE* file = 0;
+FILE *file = 0;
 
-int 
-main (int argc, char** argv)
+int
+main(int argc, char **argv)
 {
-  GLenum err;
-  GLContext ctx;
+    GLenum err;
+    GLContext ctx;
 
-  /* ---------------------------------------------------------------------- */
-  /* parse arguments */
-  if (GL_TRUE == ParseArgs(argc-1, argv+1))
-  {
+    /* ---------------------------------------------------------------------- */
+    /* parse arguments */
+    if (GL_TRUE == ParseArgs(argc - 1, argv + 1))
+    {
 #if defined(_WIN32)
     fprintf(stderr, "Usage: visualinfo [-a] [-s] [-h] [-pf <id>]\n");
     fprintf(stderr, "        -a: show all visuals\n");
@@ -105,27 +113,27 @@ main (int argc, char** argv)
     fprintf(stderr, "        -pf <id>: use given pixelformat\n");
     fprintf(stderr, "        -h: this screen\n");
 #else
-    fprintf(stderr, "Usage: visualinfo [-h] [-display <display>] [-visual <id>]\n");
-    fprintf(stderr, "        -h: this screen\n");
-    fprintf(stderr, "        -display <display>: use given display\n");
-    fprintf(stderr, "        -visual <id>: use given visual\n");
+        fprintf(stderr, "Usage: visualinfo [-h] [-display <display>] [-visual <id>]\n");
+        fprintf(stderr, "        -h: this screen\n");
+        fprintf(stderr, "        -display <display>: use given display\n");
+        fprintf(stderr, "        -visual <id>: use given visual\n");
 #endif
-    return 1;
-  }
+        return 1;
+    }
 
-  /* ---------------------------------------------------------------------- */
-  /* create OpenGL rendering context */
-  InitContext(&ctx);
-  if (GL_TRUE == CreateContext(&ctx))
-  {
-    fprintf(stderr, "Error: CreateContext failed\n");
-    DestroyContext(&ctx);
-    return 1;
-  }
+    /* ---------------------------------------------------------------------- */
+    /* create OpenGL rendering context */
+    InitContext(&ctx);
+    if (GL_TRUE == CreateContext(&ctx))
+    {
+        fprintf(stderr, "Error: CreateContext failed\n");
+        DestroyContext(&ctx);
+        return 1;
+    }
 
-  /* ---------------------------------------------------------------------- */
-  /* initialize GLEW */
-  glewExperimental = GL_TRUE;
+    /* ---------------------------------------------------------------------- */
+    /* initialize GLEW */
+    glewExperimental = GL_TRUE;
 #ifdef GLEW_MX
   err = glewContextInit(glewGetContext());
 #  ifdef _WIN32
@@ -134,17 +142,17 @@ main (int argc, char** argv)
   err = err || glxewContextInit(glxewGetContext());
 #  endif
 #else
-  err = glewInit();
+    err = glewInit();
 #endif
-  if (GLEW_OK != err)
-  {
-    fprintf(stderr, "Error [main]: glewInit failed: %s\n", glewGetErrorString(err));
-    DestroyContext(&ctx);
-    return 1;
-  }
+    if (GLEW_OK != err)
+    {
+        fprintf(stderr, "Error [main]: glewInit failed: %s\n", glewGetErrorString(err));
+        DestroyContext(&ctx);
+        return 1;
+    }
 
-  /* ---------------------------------------------------------------------- */
-  /* open file */
+    /* ---------------------------------------------------------------------- */
+    /* open file */
 #if defined(_WIN32)
   if (!displaystdout)
   {
@@ -158,27 +166,27 @@ main (int argc, char** argv)
   if (file == NULL)
     file = stdout;
 #else
-  file = stdout;
+    file = stdout;
 #endif
 
-  /* ---------------------------------------------------------------------- */
-  /* output header information */
-  /* OpenGL extensions */
-  fprintf(file, "OpenGL vendor string: %s\n", glGetString(GL_VENDOR));
-  fprintf(file, "OpenGL renderer string: %s\n", glGetString(GL_RENDERER));
-  fprintf(file, "OpenGL version string: %s\n", glGetString(GL_VERSION));
-  fprintf(file, "OpenGL extensions (GL_): \n");
-  PrintExtensions((const char*)glGetString(GL_EXTENSIONS));
+    /* ---------------------------------------------------------------------- */
+    /* output header information */
+    /* OpenGL extensions */
+    fprintf(file, "OpenGL vendor string: %s\n", glGetString(GL_VENDOR));
+    fprintf(file, "OpenGL renderer string: %s\n", glGetString(GL_RENDERER));
+    fprintf(file, "OpenGL version string: %s\n", glGetString(GL_VERSION));
+    fprintf(file, "OpenGL extensions (GL_): \n");
+    PrintExtensions((const char *) glGetString(GL_EXTENSIONS));
 
 #ifndef GLEW_NO_GLU
-  /* GLU extensions */
-  fprintf(file, "GLU version string: %s\n", gluGetString(GLU_VERSION));
-  fprintf(file, "GLU extensions (GLU_): \n");
-  PrintExtensions((const char*)gluGetString(GLU_EXTENSIONS));
+    /* GLU extensions */
+    fprintf(file, "GLU version string: %s\n", gluGetString(GLU_VERSION));
+    fprintf(file, "GLU extensions (GLU_): \n");
+    PrintExtensions((const char *) gluGetString(GLU_EXTENSIONS));
 #endif
 
-  /* ---------------------------------------------------------------------- */
-  /* extensions string */
+    /* ---------------------------------------------------------------------- */
+    /* extensions string */
 #if defined(_WIN32)
   /* WGL extensions */
   if (WGLEW_ARB_extensions_string || WGLEW_EXT_extensions_string)
@@ -189,7 +197,7 @@ main (int argc, char** argv)
 		    (const char*)wglGetExtensionsStringEXT());
   }
 #elif defined(__APPLE__) && !defined(GLEW_APPLE_GLX)
-  
+
 #elif defined(__HAIKU__)
 
   /* TODO */
@@ -201,58 +209,59 @@ main (int argc, char** argv)
                                            DefaultScreen(glXGetCurrentDisplay())));
 #endif
 
-  /* ---------------------------------------------------------------------- */
-  /* enumerate all the formats */
-  VisualInfo(&ctx);
+    /* ---------------------------------------------------------------------- */
+    /* enumerate all the formats */
+    VisualInfo(&ctx);
 
-  /* ---------------------------------------------------------------------- */
-  /* release resources */
-  DestroyContext(&ctx);
-  if (file != stdout)
-    fclose(file);
-  return 0;
+    /* ---------------------------------------------------------------------- */
+    /* release resources */
+    DestroyContext(&ctx);
+    if (file != stdout)
+        fclose(file);
+    return 0;
 }
 
 /* do the magic to separate all extensions with comma's, except
    for the last one that _may_ terminate in a space. */
-void PrintExtensions (const char* s)
+void PrintExtensions(const char *s)
 {
-  char t[80];
-  int i=0;
-  char* p=0;
+    char t[80];
+    int i = 0;
+    char *p = 0;
 
-  t[79] = '\0';
-  while (*s)
-  {
-    t[i++] = *s;
-    if(*s == ' ')
+    t[79] = '\0';
+    while (*s)
     {
-      if (*(s+1) != '\0') {
-	t[i-1] = ',';
-	t[i] = ' ';
-	p = &t[i++];
-      }
-      else /* zoinks! last one terminated in a space! */
-      {
-	t[i-1] = '\0';
-      }
-    }
-    if(i > 80 - 5)
-    {
-      *p = t[i] = '\0';
-      fprintf(file, "    %s\n", t);
-      p++;
-      i = (int)strlen(p);
+        t[i++] = *s;
+        if (*s == ' ')
+        {
+            if (*(s + 1) != '\0')
+            {
+                t[i - 1] = ',';
+                t[i] = ' ';
+                p = &t[i++];
+            }
+            else /* zoinks! last one terminated in a space! */
+            {
+                t[i - 1] = '\0';
+            }
+        }
+        if (i > 80 - 5)
+        {
+            *p = t[i] = '\0';
+            fprintf(file, "    %s\n", t);
+            p++;
+            i = (int) strlen(p);
 #if defined(_MSC_VER) && (_MSC_VER >= 1400)
       strcpy_s(t, sizeof(t), p);
 #else
-      strcpy(t, p);
+            strcpy(t, p);
 #endif
+        }
+        s++;
     }
-    s++;
-  }
-  t[i] = '\0';
-  fprintf(file, "    %s.\n", t);
+    t[i] = '\0';
+    fprintf(file, "    %s.\n", t);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -598,7 +607,7 @@ VisualInfo (GLContext* ctx)
 #elif defined(__APPLE__) && !defined(GLEW_APPLE_GLX)
 
 void
-VisualInfo (GLContext* __attribute__((__unused__)) ctx)
+VisualInfo(GLContext *__attribute__((__unused__)) ctx)
 {
 /*
   int attrib[] = { AGL_RGBA, AGL_NONE };
@@ -1064,38 +1073,38 @@ void DestroyContext (GLContext* ctx)
 
 #elif defined(__APPLE__) && !defined(GLEW_APPLE_GLX)
 
-void InitContext (GLContext* ctx)
+void InitContext(GLContext *ctx)
 {
-  ctx->ctx = NULL;
-  ctx->octx = NULL;
+    ctx->ctx = NULL;
+    ctx->octx = NULL;
 }
 
-GLboolean CreateContext (GLContext* ctx)
+GLboolean CreateContext(GLContext *ctx)
 {
-  int attrib[] = { AGL_RGBA, AGL_NONE };
-  AGLPixelFormat pf;
-  /* check input */
-  if (NULL == ctx) return GL_TRUE;
-  /*int major, minor;
-  SetPortWindowPort(wnd);
-  aglGetVersion(&major, &minor);
-  fprintf(stderr, "GL %d.%d\n", major, minor);*/
-  pf = aglChoosePixelFormat(NULL, 0, attrib);
-  if (NULL == pf) return GL_TRUE;
-  ctx->ctx = aglCreateContext(pf, NULL);
-  if (NULL == ctx->ctx || AGL_NO_ERROR != aglGetError()) return GL_TRUE;
-  aglDestroyPixelFormat(pf);
-  /*aglSetDrawable(ctx, GetWindowPort(wnd));*/
-  ctx->octx = aglGetCurrentContext();
-  if (GL_FALSE == aglSetCurrentContext(ctx->ctx)) return GL_TRUE;
-  return GL_FALSE;
+    int attrib[] = {AGL_RGBA, AGL_NONE};
+    AGLPixelFormat pf;
+    /* check input */
+    if (NULL == ctx) return GL_TRUE;
+    /*int major, minor;
+    SetPortWindowPort(wnd);
+    aglGetVersion(&major, &minor);
+    fprintf(stderr, "GL %d.%d\n", major, minor);*/
+    pf = aglChoosePixelFormat(NULL, 0, attrib);
+    if (NULL == pf) return GL_TRUE;
+    ctx->ctx = aglCreateContext(pf, NULL);
+    if (NULL == ctx->ctx || AGL_NO_ERROR != aglGetError()) return GL_TRUE;
+    aglDestroyPixelFormat(pf);
+    /*aglSetDrawable(ctx, GetWindowPort(wnd));*/
+    ctx->octx = aglGetCurrentContext();
+    if (GL_FALSE == aglSetCurrentContext(ctx->ctx)) return GL_TRUE;
+    return GL_FALSE;
 }
 
-void DestroyContext (GLContext* ctx)
+void DestroyContext(GLContext *ctx)
 {
-  if (NULL == ctx) return;
-  aglSetCurrentContext(ctx->octx);
-  if (NULL != ctx->ctx) aglDestroyContext(ctx->ctx);
+    if (NULL == ctx) return;
+    aglSetCurrentContext(ctx->octx);
+    if (NULL != ctx->ctx) aglDestroyContext(ctx->ctx);
 }
 
 /* ------------------------------------------------------------------------ */
@@ -1177,11 +1186,11 @@ void DestroyContext (GLContext* ctx)
 
 #endif /* __UNIX || (__APPLE__ && GLEW_APPLE_GLX) */
 
-GLboolean ParseArgs (int argc, char** argv)
+GLboolean ParseArgs(int argc, char **argv)
 {
-  int p = 0;
-  while (p < argc)
-  {
+    int p = 0;
+    while (p < argc)
+    {
 #if defined(_WIN32)
     if (!strcmp(argv[p], "-pf") || !strcmp(argv[p], "-pixelformat"))
     {
@@ -1204,24 +1213,24 @@ GLboolean ParseArgs (int argc, char** argv)
     else
       return GL_TRUE;
 #else
-    if (!strcmp(argv[p], "-display"))
-    {
-      if (++p >= argc) return GL_TRUE;
-      display = argv[p];
-    }
-    else if (!strcmp(argv[p], "-visual"))
-    {
-      if (++p >= argc) return GL_TRUE;
-      visual = (int)strtol(argv[p], NULL, 0);
-    }
-    else if (!strcmp(argv[p], "-h"))
-    {
-      return GL_TRUE;
-    }
-    else
-      return GL_TRUE;
+        if (!strcmp(argv[p], "-display"))
+        {
+            if (++p >= argc) return GL_TRUE;
+            display = argv[p];
+        }
+        else if (!strcmp(argv[p], "-visual"))
+        {
+            if (++p >= argc) return GL_TRUE;
+            visual = (int) strtol(argv[p], NULL, 0);
+        }
+        else if (!strcmp(argv[p], "-h"))
+        {
+            return GL_TRUE;
+        }
+        else
+            return GL_TRUE;
 #endif
-    p++;
-  }
-  return GL_FALSE;
+        p++;
+    }
+    return GL_FALSE;
 }

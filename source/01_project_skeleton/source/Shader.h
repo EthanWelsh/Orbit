@@ -23,10 +23,7 @@
 
 namespace tdogl
 {
-
-    /**
-    Represents a compiled OpenGL shader.
-    */
+    //Represents a compiled OpenGL shader.
     class Shader
     {
     public:
@@ -42,7 +39,6 @@ namespace tdogl
         */
         static Shader shaderFromFile(const std::string &filePath, GLenum shaderType);
 
-
         /**
         Creates a shader from a string of shader source code.
 
@@ -54,10 +50,8 @@ namespace tdogl
         */
         Shader(const std::string &shaderCode, GLenum shaderType);
 
+        //@result The shader's object ID, as returned from glCreateShader
 
-        /**
-        @result The shader's object ID, as returned from glCreateShader
-        */
         GLuint object() const;
 
         // tdogl::Shader objects can be copied and assigned because they are reference counted

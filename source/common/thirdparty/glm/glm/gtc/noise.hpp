@@ -51,29 +51,29 @@
 
 namespace glm
 {
-	/// @addtogroup gtc_noise
-	/// @{
+    /// @addtogroup gtc_noise
+    /// @{
 
-	/// Classic perlin noise.
-	/// @see gtc_noise
-	template <typename T, precision P, template<typename, precision> class vecType>
-	GLM_FUNC_DECL T perlin(
-		vecType<T, P> const & p);
-		
-	/// Periodic perlin noise.
-	/// @see gtc_noise
-	template <typename T, precision P, template<typename, precision> class vecType>
-	GLM_FUNC_DECL T perlin(
-		vecType<T, P> const & p,
-		vecType<T, P> const & rep);
+    /// Classic perlin noise.
+    /// @see gtc_noise
+    template<typename T, precision P, template<typename, precision> class vecType>
+    GLM_FUNC_DECL T perlin(
+            vecType<T, P> const &p);
 
-	/// Simplex noise.
-	/// @see gtc_noise
-	template <typename T, precision P, template<typename, precision> class vecType>
-	GLM_FUNC_DECL T simplex(
-		vecType<T, P> const & p);
+    /// Periodic perlin noise.
+    /// @see gtc_noise
+    template<typename T, precision P, template<typename, precision> class vecType>
+    GLM_FUNC_DECL T perlin(
+            vecType<T, P> const &p,
+            vecType<T, P> const &rep);
 
-	/// @}
+    /// Simplex noise.
+    /// @see gtc_noise
+    template<typename T, precision P, template<typename, precision> class vecType>
+    GLM_FUNC_DECL T simplex(
+            vecType<T, P> const &p);
+
+    /// @}
 }//namespace glm
 
 #include "noise.inl"

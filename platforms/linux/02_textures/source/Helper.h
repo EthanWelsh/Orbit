@@ -7,8 +7,10 @@
 #include <limits>
 
 #if defined( __APPLE_CC__ ) || defined ( __APPLE__ )
-	#define PLATFORM_OSX
-	#include <CoreFoundation/CoreFoundation.h>
+#define PLATFORM_OSX
+
+#include <CoreFoundation/CoreFoundation.h>
+
 #elif defined( __WIN32__ ) || defined( _WIN32 ) || defined( _WIN64 )
 	#define PLATFORM_WIN32
 	#include <windows.h>

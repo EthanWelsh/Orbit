@@ -14,22 +14,24 @@
 
 const float DEFAULT_MOVE_SPEED = 2.0; //units per second
 
-typedef enum{
-	eW,		//W
-	eS,		//S
-	eA,		//A
-	eD,		//D
-	eZoomIn,
-	eZoomOut,
-	eDrag,
-	eNone
-}eGestureAction;
+typedef enum
+{
+    eW,        //W
+    eS,        //S
+    eA,        //A
+    eD,        //D
+    eZoomIn,
+    eZoomOut,
+    eDrag,
+    eNone
+} eGestureAction;
 
-struct Gesture_{
-	int fingers;
-	int taps;
-	eGestureAction action;
-	bool continious;
+struct Gesture_
+{
+    int fingers;
+    int taps;
+    eGestureAction action;
+    bool continious;
 };
 typedef struct Gesture_ Gesture;
 
@@ -39,6 +41,9 @@ extern float gMoveSpeed;
 extern glm::vec2 gDragPoint;
 
 int iOS_main();
+
 void Render();
+
 void Update(float secondsElapsed);
+
 #endif
