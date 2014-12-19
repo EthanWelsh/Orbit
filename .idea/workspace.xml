@@ -1,120 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11759cab-941f-45ff-b7eb-3c307fc089a7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/sys/01_project_skeleton-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/sys/01_project_skeleton-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/sys/01_project_skeleton-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/sys/01_project_skeleton-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/sys/01_project_skeleton-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/sys/01_project_skeleton-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/sys/01_project_skeleton-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/sys/01_project_skeleton-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/sys/01_project_skeleton-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/sys/01_project_skeleton-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/sys/01_project_skeleton-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/sys/01_project_skeleton-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/sys/01_project_skeleton-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/sys/01_project_skeleton-Prefix.pch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/sys/01_project_skeleton-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/sys/01_project_skeleton-Prefix.pch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/sys/01_project_skeleton-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/sys/01_project_skeleton-Prefix.pch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/sys/01_project_skeleton-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/sys/01_project_skeleton-Prefix.pch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/sys/01_project_skeleton-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/sys/01_project_skeleton-Prefix.pch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/sys/01_project_skeleton-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/sys/01_project_skeleton-Prefix.pch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Bitmap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Bitmap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Bitmap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Bitmap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Bitmap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Bitmap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Bitmap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Bitmap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Bitmap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Bitmap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Bitmap.h" afterPath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Bitmap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Camera.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Camera.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Camera.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Camera.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Camera.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Camera.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Camera.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Camera.h" afterPath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Camera.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Helper.cpp" afterPath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Helper.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/02_textures/source/Helper.cpp" afterPath="$PROJECT_DIR$/platforms/linux/02_textures/source/Helper.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Helper.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/02_textures/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/02_textures/source/Helper.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/03_matrices/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/03_matrices/source/Helper.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/04_camera/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/04_camera/source/Helper.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/Helper.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/Helper.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/Helper.h" afterPath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/Helper.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/01_project_skeleton/source/Program.cpp" afterPath="$PROJECT_DIR$/source/01_project_skeleton/source/Program.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/Program.h" afterPath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Program.h" afterPath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Program.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/01_project_skeleton/source/Shader.cpp" afterPath="$PROJECT_DIR$/source/01_project_skeleton/source/Shader.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/Shader.h" afterPath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/01_project_skeleton/source/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Shader.h" afterPath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/01_project_skeleton/source/Shader.h" afterPath="$PROJECT_DIR$/source/01_project_skeleton/source/Shader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/source/tdogl/Texture.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/source/tdogl/Texture.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/tdogl/Texture.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/tdogl/Texture.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/tdogl/Texture.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/linux/02_textures/source/tdogl/Texture.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/linux/03_matrices/source/tdogl/Texture.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/linux/04_camera/source/tdogl/Texture.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/linux/05_asset_instance/source/tdogl/Texture.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/linux/06_diffuse_lighting/source/tdogl/Texture.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Texture.h" afterPath="$PROJECT_DIR$/platforms/linux/07_more_lighting/source/tdogl/Texture.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/WLAppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/WLAppDelegate.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/source/ios_specific/WLAppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/source/ios_specific/WLAppDelegate.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/source/ios_specific/WLAppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/source/ios_specific/WLAppDelegate.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/ios_specific/WLAppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/ios_specific/WLAppDelegate.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/ios_specific/WLAppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/ios_specific/WLAppDelegate.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/ios_specific/WLAppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/ios_specific/WLAppDelegate.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/ext.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/ext.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/fwd.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/fwd.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glew/src/glew.c" afterPath="$PROJECT_DIR$/source/common/thirdparty/glew/src/glew.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glew/src/glewinfo.c" afterPath="$PROJECT_DIR$/source/common/thirdparty/glew/src/glewinfo.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/iOS_main.h" afterPath="$PROJECT_DIR$/platforms/ios/01_project_skeleton/source/iOS_main.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/02_textures/source/iOS_main.h" afterPath="$PROJECT_DIR$/platforms/ios/02_textures/source/iOS_main.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/03_matrices/source/iOS_main.h" afterPath="$PROJECT_DIR$/platforms/ios/03_matrices/source/iOS_main.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/04_camera/source/iOS_main.h" afterPath="$PROJECT_DIR$/platforms/ios/04_camera/source/iOS_main.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/iOS_main.h" afterPath="$PROJECT_DIR$/platforms/ios/05_asset_instance/source/iOS_main.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/iOS_main.h" afterPath="$PROJECT_DIR$/platforms/ios/06_diffuse_lighting/source/iOS_main.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp" afterPath="$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat2x2.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat2x2.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat2x3.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat2x3.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat2x4.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat2x4.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat3x2.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat3x2.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat3x3.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat3x3.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat3x4.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat3x4.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat4x2.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat4x2.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat4x3.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat4x3.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat4x4.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/mat4x4.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/gtc/noise.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/gtc/noise.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/osx/platform_osx.mm" afterPath="$PROJECT_DIR$/platforms/osx/platform_osx.mm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/windows/platform_windows.cpp" afterPath="$PROJECT_DIR$/platforms/windows/platform_windows.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/stb_image/stb_image.h" afterPath="$PROJECT_DIR$/source/common/thirdparty/stb_image/stb_image.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/gtc/ulp.hpp" afterPath="$PROJECT_DIR$/source/common/thirdparty/glm/glm/gtc/ulp.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/common/thirdparty/glew/src/visualinfo.c" afterPath="$PROJECT_DIR$/source/common/thirdparty/glew/src/visualinfo.c" />
+    <list default="true" id="11759cab-941f-45ff-b7eb-3c307fc089a7" name="Default" comment="Code Reformat">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Orbit.iws" />
@@ -142,7 +29,7 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1538" max-vertical-offset="2236">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2158" max-vertical-offset="2236">
               <caret line="166" column="1" selection-start-line="166" selection-start-column="1" selection-end-line="166" selection-end-column="1" />
               <folding>
                 <element signature="e#50#70#0" expanded="true" />
@@ -155,7 +42,7 @@
       <file leaf-file-name="Program.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/Program.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="719" max-vertical-offset="1378">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1300" max-vertical-offset="1378">
               <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
               <folding>
                 <element signature="e#615#635#0" expanded="true" />
@@ -167,7 +54,7 @@
       <file leaf-file-name="Shader.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/Shader.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1560">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1482" max-vertical-offset="1560">
               <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -179,8 +66,8 @@
       <file leaf-file-name="Shader.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/Shader.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8027314" vertical-offset="277" max-vertical-offset="1040">
-              <caret line="62" column="39" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.80517507" vertical-offset="277" max-vertical-offset="1040">
+              <caret line="62" column="35" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
               <folding>
                 <element signature="e#628#648#0" expanded="true" />
               </folding>
@@ -354,12 +241,20 @@
       <option name="number" value="Default" />
       <updated>1418970228312</updated>
     </task>
+    <task id="LOCAL-00001" summary="Code Reformat">
+      <created>1418975292128</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1418975292128</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="23" width="1229" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -372,7 +267,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -391,6 +285,10 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Code Reformat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code Reformat" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -492,8 +390,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/01_project_skeleton/source/Shader.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8027314" vertical-offset="277" max-vertical-offset="1040">
-          <caret line="62" column="39" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.80517507" vertical-offset="277" max-vertical-offset="1040">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
           <folding>
             <element signature="e#628#648#0" expanded="true" />
           </folding>
