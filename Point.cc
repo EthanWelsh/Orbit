@@ -11,9 +11,7 @@ Point::Point(int x, int y): x(x), y(y)
 std::string Point::toString()
 {
     std::stringstream strm;
-
     strm << "(" << x << ", " << y << ")";
-
     return strm.str();
 }
 
