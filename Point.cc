@@ -12,7 +12,7 @@ std::string Point::toString()
 {
     std::stringstream strm;
 
-    strm << "(" << x << ", " << y << ")\n";
+    strm << "(" << x << ", " << y << ")";
 
     return strm.str();
 }

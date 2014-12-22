@@ -20,6 +20,6 @@ Vector Vector::operator+(Vector& v)
 std::string Vector::toString()
 {
     std::stringstream strm;
-    strm << "(" << x << ", " << y << ")\n";
+    strm << "(" << x << ", " << y << ")";
     return strm.str();
 }
