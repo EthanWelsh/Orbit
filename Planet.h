@@ -8,12 +8,11 @@ class Planet
 public:
     int mass;
     int radius;
-    Color color;
 
     Point position;
     Point heading;
 
-    std::ostream& operator<<(std::ostream &strm);
+    std::string Planet::toString();
 
     Planet(int mass, int radius, Point position, Point heading);
 

@@ -1,5 +1,6 @@
 #include <iosfwd>
 #include <iostream>
+#include <sstream>
 #include "Point.h"
 
 Point::Point(int x, int y): x(x), y(y)
@@ -15,7 +16,11 @@ Point Point::operator+(Point& p)
     return ret;
 }
 
-std::ostream& Point::operator<<(std::ostream &strm) const
+std::string Point::toString();
 {
-    return strm << "(" << x << ", " << y << ")\n";
+    std::stringstream strm;
+
+    strm << "(" << x << ", " << y << ")\n";
+
+    return strm.str();
 }
