@@ -3,7 +3,7 @@
 #include <math.h>
 #import "Planet.h"
 
-Planet::Planet(int mass, int radius, Point position, Point heading): mass(mass), radius(radius), position(position), heading(heading)
+Planet::Planet(int mass, int radius, Point position, Vector heading): mass(mass), radius(radius), position(position), heading(heading)
 {
 }
 
