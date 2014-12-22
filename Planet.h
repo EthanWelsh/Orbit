@@ -1,10 +1,23 @@
-//
-// Created by Ethan Welsh on 12/21/14.
-// Copyright (c) 2014 Ethan Welsh. All rights reserved.
-//
+#include <iosfwd>
+#include "Color.h"
+#include "Point.h"
 
-#import <Foundation/Foundation.h>
+class Planet
+{
+
+public:
+    int mass;
+    int radius;
+    Color color;
+
+    Point position;
+    Point heading;
+
+    std::ostream& operator<<(std::ostream &strm);
+
+    Planet(int mass, int radius, Point position, Point heading);
 
 
-@interface Vector : NSObject
-@end
+
+
+};

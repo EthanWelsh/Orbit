@@ -8,4 +8,5 @@ public:
 
     Point(int x, int y);
     Point operator+(Point& p);
+    std::ostream& operator<<(std::ostream &strm);
 };

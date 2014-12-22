@@ -1,8 +1,22 @@
 #include <iostream>
+#include <deque>
+#include "Planet.h"
 
-int main(int argc, char **argv)
+using namespace std;
+
+int main()
 {
-    std::cout << "Hello World!" << std::endl;
-    std::cin.get();
+    //deque<Planet> dq();
+
+    int m = 500;
+    int r = 20;
+    Point p(25, 25);
+    Point h(30, 30);
+
+
+    Planet planet(m, r, p, h);
+
+    std::cout << planet << endl;
+
     return 0;
 }

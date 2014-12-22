@@ -1,19 +1,14 @@
-//
-// Created by Ethan Welsh on 12/21/14.
-// Copyright (c) 2014 Ethan Welsh. All rights reserved.
-//
-
+#include <ostream>
 #import "Planet.h"
-#include "Color.h"
 
-class Planet
+Planet::Planet(int mass, int radius, Point position, Point heading): mass(mass), radius(radius), position(position), heading(heading)
 {
+}
 
-public:
-    int mass;
-    int radius;
-    Color color;
-
-    Point position;
-    Point heading;
-};
+std::ostream& Planet::operator<<(std::ostream &strm)
+{
+    return strm << "Mass: "     << mass     << "\n"
+                << "Radius: "   << radius   << "\n"
+                << "Position: " << position << "\n"
+                << "Heading: "  << heading  << "\n";
+}
