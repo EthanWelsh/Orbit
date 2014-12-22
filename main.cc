@@ -16,7 +16,17 @@ int main()
 
     Planet planet(m, r, p, h);
 
+    Point p1(50, 75);
+    Point h1(40,40);
+
+    Planet planet1(m + 100, r, p1, h1);
+
+
     std::cout << planet.toString() << endl;
+    std::cout << planet1.toString()<< endl;
+
+    std:cout << "Force between: " << planet.calculateGravity(planet1) << endl;
+
 
     return 0;
 }

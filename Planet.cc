@@ -1,5 +1,6 @@
 #include <ostream>
 #include <sstream>
+#include <math.h>
 #import "Planet.h"
 
 Planet::Planet(int mass, int radius, Point position, Point heading): mass(mass), radius(radius), position(position), heading(heading)
@@ -16,4 +17,13 @@ std::string Planet::toString()
       << "Heading: "  << heading.toString() << "\n";
 
     return x.str();
+}
+
+double Planet::calculateGravity(Planet &p)
+{
+    int mass1 = mass;
+    int mass2 = p.mass;
+    double distanceBetween = position.distance(p.position);
+
+    return ((mass1 * mass2) / pow(distanceBetween, 2));
 }
