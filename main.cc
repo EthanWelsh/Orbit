@@ -11,13 +11,13 @@ int main()
     int m = 500;
     int r = 20;
     Point p(25, 25);
-    Point h(30, 30);
+    Vector h(30, 30);
 
 
     Planet planet(m, r, p, h);
 
     Point p1(50, 75);
-    Point h1(40,40);
+    Vector h1(40,40);
 
     Planet planet1(m + 100, r, p1, h1);
 
