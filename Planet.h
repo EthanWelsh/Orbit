@@ -11,7 +11,7 @@ public:
     Point position;
     Point heading;
 
-    std::string Planet::toString();
+    std::string toString();
 
     Planet(int mass, int radius, Point position, Point heading);
 

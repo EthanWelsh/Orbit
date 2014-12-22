@@ -16,7 +16,7 @@ int main()
 
     Planet planet(m, r, p, h);
 
-    std::cout << planet << endl;
+    std::cout << planet.toString() << endl;
 
     return 0;
 }

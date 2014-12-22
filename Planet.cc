@@ -12,8 +12,8 @@ std::string Planet::toString()
 
     x << "Mass: "     << mass     << "\n"
       << "Radius: "   << radius   << "\n"
-      << "Position: " << position << "\n"
-      << "Heading: "  << heading  << "\n";
+      << "Position: " << position.toString() << "\n"
+      << "Heading: "  << heading.toString() << "\n";
 
     return x.str();
 }
