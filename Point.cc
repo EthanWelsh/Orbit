@@ -16,7 +16,7 @@ Point Point::operator+(Point& p)
     return ret;
 }
 
-std::string Point::toString();
+std::string Point::toString()
 {
     std::stringstream strm;
 

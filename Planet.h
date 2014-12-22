@@ -1,5 +1,4 @@
 #include <iosfwd>
-#include "Color.h"
 #include "Point.h"
 
 class Planet
