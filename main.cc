@@ -26,12 +26,9 @@ int main()
 
     std:cout << "Force between: " << planet.calculateGravity(sun) << endl;
 
-    int x = 0;
-    int y = 0;
+    Vector v = planet.findVector(sun);
 
-    planet.distance(sun, x, y);
-
-    cout << "Horizontal: " << x << "Vertical: " << y << endl;
+    printf("X: %f\nY: %f", v.x, v.y);
 
 
     return 0;

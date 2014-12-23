@@ -2,10 +2,10 @@ class Vector
 {
 
 public:
-    int x;
-    int y;
+    double x;
+    double y;
 
-    Vector(int x, int y);
+    Vector(double x, double y);
     Vector operator+(Vector& v);
     std::string toString();
 

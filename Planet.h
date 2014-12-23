@@ -15,9 +15,9 @@ public:
     std::string toString();
 
     Planet(int mass, int radius, Point position, Vector heading);
-    void distance(Planet &p, int &xDistance, int &yDistance);
+    void distance(Planet &p, double &horizontalDistance, double &verticalDistance);
     double calculateGravity(Planet &p);
-
+    Vector findVector(Planet &p);
 
 
 

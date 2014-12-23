@@ -30,10 +30,27 @@ double Planet::calculateGravity(Planet &p)
 }
 
 // Calculates the horizontal and vertical distance to another given planet P.
-void Planet::distance(Planet &p, int &horizontalDistance, int &verticalDistance)
+void Planet::distance(Planet &p, double &horizontalDistance, double &verticalDistance)
 {
     horizontalDistance = abs(abs(position.x) - p.position.x);
     verticalDistance = abs(abs(position.y) - p.position.y);
 }
 
-//
+// Given a planet, calculates a gravitational vector towards that planet.
+Vector Planet::findVector(Planet &p)
+{
+    double forceBetween = calculateGravity(p);
+
+    double horizontalDistance = 0;
+    double verticalDistance = 0;
+    distance(p, horizontalDistance, verticalDistance);
+
+    double xComponent = (forceBetween/(horizontalDistance + verticalDistance)) * horizontalDistance;
+    double yComponent = (forceBetween/(horizontalDistance + verticalDistance)) * verticalDistance;
+
+    printf("~~~~~~~~~~~~~~\nX: %f\nY: %f\n~~~~~~~~~~~~~~\n", xComponent, yComponent);
+
+    Vector toReturn(xComponent, yComponent);
+
+    return toReturn;
+}

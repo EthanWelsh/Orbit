@@ -4,7 +4,7 @@
 #include <math.h>
 #include "Vector.h"
 
-Vector::Vector(int x, int y): x(x), y(y)
+Vector::Vector(double x, double y): x(x), y(y)
 {
 }
 
