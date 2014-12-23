@@ -8,24 +8,25 @@ int main()
 {
     //deque<Planet> dq();
 
-    int m = 500;
-    int r = 20;
-    Point p(25, 25);
-    Vector h(30, 30);
+    int mass = 4;
+    int radius = 1;
+    Point origin(200, 100);
+    Vector heading(25, 25);
 
+    Planet planet(mass, radius, origin, heading);
 
-    Planet planet(m, r, p, h);
+    int mass1 = 100000;
+    int radius1 = 30;
+    Point origin1(100,400);
+    Vector heading1(0, 0);
 
-    Point p1(50, 75);
-    Vector h1(40,40);
-
-    Planet planet1(m + 100, r, p1, h1);
+    Planet sun(mass1, radius1, origin1, heading1);
 
 
     std::cout << planet.toString() << endl;
-    std::cout << planet1.toString()<< endl;
+    std::cout << sun.toString()<< endl;
 
-    std:cout << "Force between: " << planet.calculateGravity(planet1) << endl;
+    std:cout << "Force between: " << planet.calculateGravity(sun) << endl;
 
 
     return 0;
