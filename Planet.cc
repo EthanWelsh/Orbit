@@ -54,3 +54,17 @@ Vector Planet::findVector(Planet &p)
 
     return toReturn;
 }
+
+// Given a deque of planets, sums them into a final heading vector which will be its orbital path
+Vector Planet::sumVector(std::deque<Planet> dq)
+{
+    Vector final(heading.x,heading.y);
+
+    for(int i = 0; i < dq.size(); i++)
+    {
+        final.x = final.x + findVector(dq.at(i)).x;
+        final.y = final.y + findVector(dq.at(i)).y;
+    }
+
+    return final;
+}

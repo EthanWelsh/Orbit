@@ -20,7 +20,6 @@ int main()
 
     Planet sun(mass1, radius1, origin1, heading1);
 
-
     std::cout << planet.toString() << endl;
     std::cout << sun.toString()<< endl;
 

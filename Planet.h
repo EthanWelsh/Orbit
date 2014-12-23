@@ -1,4 +1,6 @@
 #include <iosfwd>
+#include <deque>
+
 #include "Point.h"
 #include "Vector.h"
 
@@ -18,6 +20,8 @@ public:
     void distance(Planet &p, double &horizontalDistance, double &verticalDistance);
     double calculateGravity(Planet &p);
     Vector findVector(Planet &p);
+
+    Vector sumVector(std::deque<Planet> dq);
 
 
 
