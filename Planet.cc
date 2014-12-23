@@ -19,6 +19,7 @@ std::string Planet::toString()
     return x.str();
 }
 
+// Calculates the gravitational pull from this planet to a given planet P
 double Planet::calculateGravity(Planet &p)
 {
     int mass1 = mass;
@@ -27,3 +28,12 @@ double Planet::calculateGravity(Planet &p)
 
     return ((mass1 * mass2) / pow(distanceBetween, 2));
 }
+
+// Calculates the horizontal and vertical distance to another given planet P.
+void Planet::distance(Planet &p, int &horizontalDistance, int &verticalDistance)
+{
+    horizontalDistance = abs(abs(position.x) - p.position.x);
+    verticalDistance = abs(abs(position.y) - p.position.y);
+}
+
+//

@@ -15,7 +15,7 @@ int main()
 
     int mass1 = 100000;
     int radius1 = 30;
-    Point origin1(100,400);
+    Point origin1(100,500);
     Vector heading1(0, 0);
 
     Planet sun(mass1, radius1, origin1, heading1);
@@ -25,6 +25,14 @@ int main()
     std::cout << sun.toString()<< endl;
 
     std:cout << "Force between: " << planet.calculateGravity(sun) << endl;
+
+    int x = 0;
+    int y = 0;
+
+    planet.distance(sun, x, y);
+
+    cout << "Horizontal: " << x << "Vertical: " << y << endl;
+
 
     return 0;
 }
