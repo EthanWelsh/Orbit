@@ -6,8 +6,6 @@ using namespace std;
 
 int main()
 {
-    //deque<Planet> dq();
-
     int mass = 4;
     int radius = 1;
     Point origin(200, 100);
@@ -27,7 +25,6 @@ int main()
     std::cout << sun.toString()<< endl;
 
     std:cout << "Force between: " << planet.calculateGravity(sun) << endl;
-
 
     return 0;
 }
