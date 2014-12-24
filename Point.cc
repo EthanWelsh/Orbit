@@ -4,7 +4,7 @@
 #include <math.h>
 #include "Point.h"
 
-Point::Point(int x, int y): x(x), y(y)
+Point::Point(double x, double y): x(x), y(y)
 {
 }
 
@@ -17,10 +17,10 @@ std::string Point::toString()
 
 double Point::distance(Point &p)
 {
-    int x1 = x;
-    int x2 = p.x;
-    int y1 = y;
-    int y2 = p.y;
+    double x1 = x;
+    double x2 = p.x;
+    double y1 = y;
+    double y2 = p.y;
 
     return sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
 }

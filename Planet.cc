@@ -55,8 +55,8 @@ Vector Planet::findVector(Planet &p)
     double xComponent = (forceBetween/totalDistance) * horizontalDistance;
     double yComponent = (forceBetween/totalDistance) * verticalDistance;
 
-    printf("H: %f \t V: %f \t X: %f\t Y: %f HEAD: ", horizontalDistance, verticalDistance, xComponent, yComponent);
-    std::cout << heading.toString() << std::endl;
+    //printf("H: %f \t V: %f \t X: %f\t Y: %f HEAD: ", horizontalDistance, verticalDistance, xComponent, yComponent);
+    //std::cout << heading.toString() << std::endl;
 
     Vector toReturn(xComponent, yComponent);
 

@@ -3,10 +3,10 @@ class Point
 {
 
 public:
-    int x;
-    int y;
+    double x;
+    double y;
 
-    Point(int x, int y);
+    Point(double x, double y);
     std::string toString();
 
     double distance(Point &p);
