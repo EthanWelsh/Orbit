@@ -1,6 +1,7 @@
 #include <ostream>
 #include <sstream>
 #include <math.h>
+#include <iostream>
 #import "Planet.h"
 
 Planet::Planet(int mass, int radius, Point origin, Vector heading): mass(mass), radius(radius), origin(origin), heading(heading)
@@ -49,10 +50,13 @@ Vector Planet::findVector(Planet &p)
 
     //printf("HDIS: %f\n", horizontalDistance);
 
-    double xComponent = (forceBetween/(horizontalDistance + verticalDistance)) * horizontalDistance;
-    double yComponent = (forceBetween/(horizontalDistance + verticalDistance)) * verticalDistance;
+    double totalDistance = abs(horizontalDistance) + abs(verticalDistance);
 
-    printf("XCOMPONENT: %f\n", xComponent);
+    double xComponent = (forceBetween/totalDistance) * horizontalDistance;
+    double yComponent = (forceBetween/totalDistance) * verticalDistance;
+
+    printf("H: %f \t V: %f \t X: %f\t Y: %f HEAD: ", horizontalDistance, verticalDistance, xComponent, yComponent);
+    std::cout << heading.toString() << std::endl;
 
     Vector toReturn(xComponent, yComponent);
 
@@ -74,6 +78,6 @@ void Planet::sumVector(std::deque<Planet> dq)
     }
 
     heading = final;
-    origin.x += final.x;
-    origin.y += final.y;
+    origin.x += heading.x;
+    origin.y += heading.y;
 }

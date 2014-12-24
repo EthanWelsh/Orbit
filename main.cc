@@ -29,7 +29,7 @@ int main()
 
     solarSystem.push_front(sun);
 
-    for(int i = 0; i < 100; i++)
+    for(int i = 0; i < 30; i++)
     {
         planet.sumVector(solarSystem);
         cout <<planet.origin.toString() << endl;
