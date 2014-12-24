@@ -11,7 +11,7 @@ public:
     int mass;
     int radius;
 
-    Point position;
+    Point origin;
     Vector heading;
 
     std::string toString();
@@ -21,7 +21,7 @@ public:
     double calculateGravity(Planet &p);
     Vector findVector(Planet &p);
 
-    Vector sumVector(std::deque<Planet> dq);
+    void sumVector(std::deque<Planet> dq);
 
 
 

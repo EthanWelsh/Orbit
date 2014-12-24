@@ -3,7 +3,7 @@
 #include <math.h>
 #import "Planet.h"
 
-Planet::Planet(int mass, int radius, Point position, Vector heading): mass(mass), radius(radius), position(position), heading(heading)
+Planet::Planet(int mass, int radius, Point origin, Vector heading): mass(mass), radius(radius), origin(origin), heading(heading)
 {
 }
 
@@ -13,7 +13,7 @@ std::string Planet::toString()
 
     x << "Mass: "     << mass     << "\n"
       << "Radius: "   << radius   << "\n"
-      << "Position: " << position.toString() << "\n"
+      << "Position: " << origin.toString() << "\n"
       << "Heading: "  << heading.toString() << "\n";
 
     return x.str();
@@ -24,7 +24,7 @@ double Planet::calculateGravity(Planet &p)
 {
     int mass1 = mass;
     int mass2 = p.mass;
-    double distanceBetween = position.distance(p.position);
+    double distanceBetween = origin.distance(p.origin);
 
     return ((mass1 * mass2) / pow(distanceBetween, 2));
 }
@@ -32,8 +32,10 @@ double Planet::calculateGravity(Planet &p)
 // Calculates the horizontal and vertical distance to another given planet P.
 void Planet::distance(Planet &p, double &horizontalDistance, double &verticalDistance)
 {
-    horizontalDistance = abs(abs(position.x) - p.position.x);
-    verticalDistance = abs(abs(position.y) - p.position.y);
+    horizontalDistance = p.origin.x - origin.x;
+    verticalDistance =   p.origin.y - origin.y;
+
+    //printf("H: %f V: %f\n", horizontalDistance, verticalDistance);
 }
 
 // Given a planet, calculates a gravitational vector towards that planet.
@@ -45,10 +47,12 @@ Vector Planet::findVector(Planet &p)
     double verticalDistance = 0;
     distance(p, horizontalDistance, verticalDistance);
 
+    //printf("HDIS: %f\n", horizontalDistance);
+
     double xComponent = (forceBetween/(horizontalDistance + verticalDistance)) * horizontalDistance;
     double yComponent = (forceBetween/(horizontalDistance + verticalDistance)) * verticalDistance;
 
-    printf("~~~~~~~~~~~~~~\nX: %f\nY: %f\n~~~~~~~~~~~~~~\n", xComponent, yComponent);
+    printf("XCOMPONENT: %f\n", xComponent);
 
     Vector toReturn(xComponent, yComponent);
 
@@ -56,15 +60,20 @@ Vector Planet::findVector(Planet &p)
 }
 
 // Given a deque of planets, sums them into a final heading vector which will be its orbital path
-Vector Planet::sumVector(std::deque<Planet> dq)
+void Planet::sumVector(std::deque<Planet> dq)
 {
     Vector final(heading.x,heading.y);
 
+    Vector temp(0,0);
+
     for(int i = 0; i < dq.size(); i++)
     {
-        final.x = final.x + findVector(dq.at(i)).x;
-        final.y = final.y + findVector(dq.at(i)).y;
+        temp = findVector(dq.at(i));
+        final.x = final.x + temp.x;
+        final.y = final.y + temp.y;
     }
 
-    return final;
+    heading = final;
+    origin.x += final.x;
+    origin.y += final.y;
 }

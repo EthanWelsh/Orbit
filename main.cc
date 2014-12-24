@@ -8,14 +8,14 @@ int main()
 {
     int mass = 4;
     int radius = 1;
-    Point origin(200, 100);
-    Vector heading(25, 25);
+    Point origin(-10, -15);
+    Vector heading(-3, 1);
 
     Planet planet(mass, radius, origin, heading);
 
-    int mass1 = 100000;
+    int mass1 = 100;
     int radius1 = 30;
-    Point origin1(100,500);
+    Point origin1(1,1);
     Vector heading1(0, 0);
 
     Planet sun(mass1, radius1, origin1, heading1);
@@ -25,9 +25,15 @@ int main()
 
     std:cout << "Force between: " << planet.calculateGravity(sun) << endl;
 
-    Vector v = planet.findVector(sun);
+    std::deque<Planet> solarSystem;
 
-    printf("X: %f\nY: %f", v.x, v.y);
+    solarSystem.push_front(sun);
+
+    for(int i = 0; i < 100; i++)
+    {
+        planet.sumVector(solarSystem);
+        cout <<planet.origin.toString() << endl;
+    }
 
 
     return 0;
