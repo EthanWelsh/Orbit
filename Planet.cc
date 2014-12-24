@@ -4,7 +4,7 @@
 #include <iostream>
 #import "Planet.h"
 
-Planet::Planet(int mass, int radius, Point origin, Vector heading): mass(mass), radius(radius), origin(origin), heading(heading)
+Planet::Planet(int mass, int radius, int solar_system, Point origin, Vector heading): mass(mass), radius(radius), solar_system(solar_system), origin(origin), heading(heading)
 {
 }
 
@@ -14,11 +14,13 @@ std::string Planet::toString()
 
     x << "Mass: "     << mass     << "\n"
       << "Radius: "   << radius   << "\n"
+      << "Solar System: " << solar_system << "\n"
       << "Position: " << origin.toString() << "\n"
       << "Heading: "  << heading.toString() << "\n";
 
     return x.str();
 }
+
 
 // Calculates the gravitational pull from this planet to a given planet P
 double Planet::calculateGravity(Planet &p)
