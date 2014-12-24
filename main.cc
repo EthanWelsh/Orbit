@@ -20,10 +20,10 @@ int main()
 
     Planet sun(mass1, radius1, origin1, heading1);
 
-    std::cout << planet.toString() << endl;
-    std::cout << sun.toString()<< endl;
+    //std::cout << planet.toString() << endl;
+    //std::cout << sun.toString()<< endl;
 
-    std:cout << "Force between: " << planet.calculateGravity(sun) << endl;
+    //std:cout << "Force between: " << planet.calculateGravity(sun) << endl;
 
     std::deque<Planet> solarSystem;
 

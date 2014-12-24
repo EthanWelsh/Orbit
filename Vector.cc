@@ -8,15 +8,6 @@ Vector::Vector(double x, double y): x(x), y(y)
 {
 }
 
-Vector Vector::operator+(Vector& v)
-{
-    Vector ret(0,0);
-    ret.x = x + v.x;
-    ret.y = y + v.y;
-
-    return ret;
-}
-
 std::string Vector::toString()
 {
     std::stringstream strm;
