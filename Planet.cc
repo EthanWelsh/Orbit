@@ -2,7 +2,7 @@
 #include <sstream>
 #include <math.h>
 #include <iostream>
-#import "Planet.h"
+#include "Planet.h"
 
 Planet::Planet(int mass, int radius, int solar_system, Point origin, Vector heading): mass(mass), radius(radius), solar_system(solar_system), origin(origin), heading(heading)
 {
