@@ -4,7 +4,7 @@
 #include <iostream>
 #include "Planet.h"
 
-Planet::Planet(int mass, int radius, Point origin, Vector heading): mass(mass), radius(radius), origin(origin), heading(heading)
+Planet::Planet(int mass, int radius, Point origin, Vector heading, int color) : mass(mass), radius(radius), origin(origin), heading(heading), color(color)
 {
 }
 
@@ -15,7 +15,9 @@ std::string Planet::toString()
     x << "Mass: "     << mass     << "\n"
       << "Radius: "   << radius   << "\n"
       << "Position: " << origin.toString() << "\n"
-      << "Heading: "  << heading.toString() << "\n";
+      << "Heading: "  << heading.toString() << "\n"
+	  << "Color: " << color << "\n";
+
 
     return x.str();
 }
