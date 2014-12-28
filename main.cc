@@ -68,7 +68,7 @@ void my_setup(void) {
 	int mass = 4;
 	int radius = 1;
 	Point origin(-10, -15);
-	Vector heading(-3, 1);
+	Vector heading(-3, 2);
 
 	Planet planet(mass, radius, origin, heading);
 
