@@ -52,16 +52,12 @@ void drawPlanet(Planet &p){
 }
 
 
-void drawSolarSystem(){
-	
-	int mass = 4;
-	int radius = 1;
-	Point origin(-10, -15);
-	Vector heading(-3, 1);
-
-	Planet planet(mass, radius, origin, heading);
-
-	drawPlanet(planet);
+void drawSolarSystem(std::deque<Planet> planets){
+	for (int i = 0; i < planets.size(); i++)
+	{
+		Planet planet = planets.at(i);
+		drawPlanet(planet);
+	}
 }
 
 

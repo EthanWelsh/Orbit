@@ -22,7 +22,7 @@ public:
     Vector findVector(Planet &p);
 
     void sumVector(std::deque<Planet> dq);
-
+	void setupPlanets(std::deque<Planet> planets);
 
 
 

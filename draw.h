@@ -20,6 +20,6 @@
 
 void lighting_setup();
 //void drawPlanet(Planet p);
-void drawSolarSystem();
+void drawSolarSystem(std::deque<Planet> planets);
 
 void draw_edge(GLfloat*, GLfloat*, int, int, int);

@@ -5,8 +5,10 @@ Copyright (c) 2014 JRE. All rights reserved.
 */
 #include "main.h"
 #include "draw.h"
+#include <deque>
 
 bool shouldRotate;
+std::deque<Planet> planets;
 
 int main(int argc, char **argv) {
 
@@ -58,6 +60,24 @@ void gl_setup(void) {
 void my_setup(void) {
 	//draw_lighting(); Ignore for now, might do lighting later
 	shouldRotate = true;
+
+	int mass = 4;
+	int radius = 1;
+	Point origin(-10, -15);
+	Vector heading(-3, 1);
+
+	Planet planet(mass, radius, origin, heading);
+
+	int mass1 = 100;
+	int radius1 = 7;
+	Point origin1(1, 1);
+	Vector heading1(0, 0);
+
+	Planet sun(mass1, radius1, origin1, heading1);
+
+	planets.push_front(sun);
+	planets.push_front(planet);
+	
 }
 
 void my_reshape(int w, int h) {
@@ -89,7 +109,7 @@ void my_display(void)
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glMatrixMode(GL_MODELVIEW);
 
-	drawSolarSystem();
+	drawSolarSystem(planets);
 	/* buffer is ready */
 	glutSwapBuffers();
 }
