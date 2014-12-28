@@ -10,6 +10,7 @@ Copyright (c) 2014 JRE. All rights reserved.
 #include <iostream>
 
 #define DELTA_TIME 100
+#define min(a,b) ((a) < (b) ? a:b)
 
 bool shouldRotate;
 std::deque<Planet> planets;
