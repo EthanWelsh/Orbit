@@ -41,7 +41,7 @@ void glut_setup(void)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 
     /* make a 400x400 window with the title of "GLUT Skeleton" placed at the top left corner */
-    glutInitWindowSize(400, 400);
+    glutInitWindowSize(500, 500);
     glutInitWindowPosition(0, 0);
     glutCreateWindow("Orbit: Solar System Simulator");
 
@@ -54,13 +54,13 @@ void glut_setup(void)
 /* This function sets up the initial states of OpenGL related environment */
 void gl_setup(void)
 {
-
     /* specifies a background color: black in this case */
     glClearColor(0, 0, 0, 0);
 
     /* Setup for 2d projection */
     glMatrixMode(GL_PROJECTION);
 
+	//This defines our "scale" for our solar system
     gluOrtho2D(-50, 50, -50, 50);
 }
 
@@ -74,14 +74,14 @@ void my_setup(void)
     Point origin(-10, -15);
     Vector heading(-3, 2);
 
-    Planet planet(mass, radius, origin, heading, YELLOW);
+    Planet planet(mass, radius, origin, heading, BLUE);
 
     int mass1 = 100;
     int radius1 = 7; //was 30
     Point origin1(1, 1);
     Vector heading1(0, 0);
 
-    Planet sun(mass1, radius1, origin1, heading1, RED);
+    Planet sun(mass1, radius1, origin1, heading1, YELLOW);
 
     planets.push_front(sun);
     planets.push_front(planet);
@@ -90,7 +90,6 @@ void my_setup(void)
 
 void my_reshape(int w, int h)
 {
-
     /* define view port -- x, y, (origin is at lower left corner) width, height */
     glViewport(0, 0, min(w, h), min(w, h));
 }
