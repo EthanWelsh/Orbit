@@ -1,4 +1,3 @@
-#include "main.h"
 #include "Planet.h"
 
 /* define index constants into the colors array */
@@ -21,5 +20,3 @@
 void lighting_setup();
 //void drawPlanet(Planet p);
 void drawSolarSystem(std::deque<Planet> planets);
-
-void draw_edge(GLfloat*, GLfloat*, int, int, int);
