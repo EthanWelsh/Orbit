@@ -18,7 +18,6 @@ std::string Planet::toString()
       << "Heading: "  << heading.toString() << "\n"
 	  << "Color: " << color << "\n";
 
-
     return x.str();
 }
 
