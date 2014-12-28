@@ -43,7 +43,7 @@ void drawPlanet(Planet &p){
 		glTranslatef(p.origin.x, p.origin.y, 0);
 		glBegin(GL_POLYGON); 
 		{
-			glColor3fv(colors[RED]);
+			glColor3fv(colors[p.color]);
 			drawCircle(p.radius);
 		}
 		glEnd();
