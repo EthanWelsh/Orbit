@@ -6,6 +6,10 @@ Copyright (c) 2014 JRE. All rights reserved.
 #include "main.h"
 #include "draw.h"
 #include <deque>
+#include <string>
+#include <iostream>
+
+#define DELTA_TIME 100
 
 bool shouldRotate;
 std::deque<Planet> planets;
@@ -54,12 +58,12 @@ void gl_setup(void) {
 	/* Setup for 2d projection */
 	glMatrixMode(GL_PROJECTION);
 
-	gluOrtho2D(-20, 20, -20, 20);
+	gluOrtho2D(-50, 50, -50, 50);
 }
 
 void my_setup(void) {
 	//draw_lighting(); Ignore for now, might do lighting later
-	shouldRotate = true;
+	shouldRotate = false;
 
 	int mass = 4;
 	int radius = 1;
@@ -69,7 +73,7 @@ void my_setup(void) {
 	Planet planet(mass, radius, origin, heading);
 
 	int mass1 = 100;
-	int radius1 = 7;
+	int radius1 = 7; //was 30
 	Point origin1(1, 1);
 	Vector heading1(0, 0);
 
@@ -86,22 +90,41 @@ void my_reshape(int w, int h) {
 	glViewport(0, 0, min(w, h), min(w, h));
 }
 
-void my_keyboard(unsigned char key, int x, int y) {
+/*
+void my_timer(int val) {
 
-	shouldRotate = true;
+	//std::cout << planet.origin.toString() << std::endl;
+
+	glutTimerFunc(DELTA_TIME, my_timer, 0);
+	glutPostRedisplay();
+
+	
+
+	return;
+}*/
+
+void my_keyboard(unsigned char key, int x, int y) {
 
 	switch (key) {
 	case 'p':
 	case 'P':
-		shouldRotate = !shouldRotate;
-		if (shouldRotate) glutPostRedisplay();
+		//shouldRotate = !shouldRotate;	
+		shouldRotate = true;
 		break;
 	case 'q':
 	case 'Q':
 		exit(0);
 	default:
 		return;
+		break;
 	}
+
+
+	glutPostRedisplay();
+
+	
+
+	//glutTimerFunc(DELTA_TIME, my_timer, 0);
 }
 
 void my_display(void) 
@@ -109,7 +132,34 @@ void my_display(void)
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glMatrixMode(GL_MODELVIEW);
 
+
+	int mass = 4;
+	int radius = 1;
+	Point origin(-10, -15);
+	Vector heading(-3, 1);
+
+	Planet planet(mass, radius, origin, heading);
+	std::cout << shouldRotate << std::endl;
+	if (shouldRotate){
+
+		for (int i = 0; i < planets.size(); i++)
+		{
+			//Planet tempPlanet = planets.at(i);
+			planets.at(i).sumVector(planets);
+		}
+
+	}
+
+	for (int i = 0; i < planets.size(); i++)
+	{
+		Planet tempPlanet = planets.at(i);
+
+		std::cout << tempPlanet.origin.toString() << std::endl;
+	}
+
 	drawSolarSystem(planets);
+	shouldRotate = false;
 	/* buffer is ready */
 	glutSwapBuffers();
 }
+

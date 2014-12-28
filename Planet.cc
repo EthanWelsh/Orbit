@@ -72,9 +72,13 @@ void Planet::sumVector(std::deque<Planet> dq)
 
     for(int i = 0; i < dq.size(); i++)
     {
-        temp = findVector(dq.at(i));
-        final.x = final.x + temp.x;
-        final.y = final.y + temp.y;
+		if (origin.x != dq.at(i).origin.x && origin.y != dq.at(i).origin.y){
+			if (origin.x != 1 || origin.y != 1){
+				temp = findVector(dq.at(i));
+				final.x = final.x + temp.x;
+				final.y = final.y + temp.y;
+			}
+		}
     }
 
     heading = final;
