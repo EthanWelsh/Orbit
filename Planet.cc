@@ -4,7 +4,8 @@
 #include <iostream>
 #include "Planet.h"
 
-Planet::Planet(int mass, int radius, Point origin, Vector heading, int color) : mass(mass), radius(radius), origin(origin), heading(heading), color(color)
+Planet::Planet(int mass, int radius, Point origin, Vector heading, int color)
+        : mass(mass), radius(radius), origin(origin), heading(heading), color(color)
 {
 }
 
@@ -12,11 +13,11 @@ std::string Planet::toString()
 {
     std::stringstream x;
 
-    x << "Mass: "     << mass     << "\n"
-      << "Radius: "   << radius   << "\n"
-      << "Position: " << origin.toString() << "\n"
-      << "Heading: "  << heading.toString() << "\n"
-	  << "Color: " << color << "\n";
+    x << "Mass: " << mass << "\n"
+            << "Radius: " << radius << "\n"
+            << "Position: " << origin.toString() << "\n"
+            << "Heading: " << heading.toString() << "\n"
+            << "Color: " << color << "\n";
 
     return x.str();
 }
@@ -35,7 +36,7 @@ double Planet::calculateGravity(Planet &p)
 void Planet::distance(Planet &p, double &horizontalDistance, double &verticalDistance)
 {
     horizontalDistance = p.origin.x - origin.x;
-    verticalDistance =   p.origin.y - origin.y;
+    verticalDistance = p.origin.y - origin.y;
 
     //printf("H: %f V: %f\n", horizontalDistance, verticalDistance);
 }
@@ -53,8 +54,8 @@ Vector Planet::findVector(Planet &p)
 
     double totalDistance = abs(horizontalDistance) + abs(verticalDistance);
 
-    double xComponent = (forceBetween/totalDistance) * horizontalDistance;
-    double yComponent = (forceBetween/totalDistance) * verticalDistance;
+    double xComponent = (forceBetween / totalDistance) * horizontalDistance;
+    double yComponent = (forceBetween / totalDistance) * verticalDistance;
 
     //printf("H: %f \t V: %f \t X: %f\t Y: %f HEAD: ", horizontalDistance, verticalDistance, xComponent, yComponent);
     //std::cout << heading.toString() << std::endl;
@@ -67,19 +68,21 @@ Vector Planet::findVector(Planet &p)
 // Given a deque of planets, sums them into a final heading vector which will be its orbital path
 void Planet::sumVector(std::deque<Planet> dq)
 {
-    Vector final(heading.x,heading.y);
+    Vector final(heading.x, heading.y);
 
-    Vector temp(0,0);
+    Vector temp(0, 0);
 
-    for(int i = 0; i < dq.size(); i++)
+    for (int i = 0; i < dq.size(); i++)
     {
-		if (origin.x != dq.at(i).origin.x && origin.y != dq.at(i).origin.y){
-			if (origin.x != 1 || origin.y != 1){
-				temp = findVector(dq.at(i));
-				final.x = final.x + temp.x;
-				final.y = final.y + temp.y;
-			}
-		}
+        if (origin.x != dq.at(i).origin.x && origin.y != dq.at(i).origin.y)
+        {
+            if (origin.x != 1 || origin.y != 1)
+            {
+                temp = findVector(dq.at(i));
+                final.x = final.x + temp.x;
+                final.y = final.y + temp.y;
+            }
+        }
     }
 
     heading = final;

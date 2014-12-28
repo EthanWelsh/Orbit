@@ -21,7 +21,7 @@ int main()
 
     //std:cout << "Force between: " << planet.calculateGravity(sun) << endl;
 
-    std::deque<Planet> solarSystem;
+    std::deque <Planet> solarSystem;
 
     solarSystem.push_front(sun);
 

@@ -18,5 +18,6 @@
 #define GOLD 14
 
 void lighting_setup();
+
 //void drawPlanet(Planet p);
 void drawSolarSystem(std::deque<Planet> planets);
