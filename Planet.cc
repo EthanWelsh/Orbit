@@ -12,12 +12,12 @@ Planet::Planet(int mass, int radius, Point origin, Vector heading, int color)
 std::string Planet::toString()
 {
     std::stringstream x;
-
+    
     x << "Mass: " << mass << "\n"
-            << "Radius: " << radius << "\n"
-            << "Position: " << origin.toString() << "\n"
-            << "Heading: " << heading.toString() << "\n"
-            << "Color: " << color << "\n";
+      << "Radius: " << radius << "\n"
+      << "Position: " << origin.toString() << "\n"
+      << "Heading: " << heading.toString() << "\n"
+      << "Color: " << color << "\n";
 
     return x.str();
 }
