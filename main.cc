@@ -32,6 +32,7 @@ int main(int argc, char **argv)
     return (0);
 }
 
+
 /* This function sets up the windowing related glut calls */
 void glut_setup(void)
 {
@@ -51,6 +52,8 @@ void glut_setup(void)
     glutKeyboardFunc(my_keyboard);
 }
 
+
+
 /* This function sets up the initial states of OpenGL related environment */
 void gl_setup(void)
 {
@@ -63,6 +66,7 @@ void gl_setup(void)
 	//This defines our "scale" for our solar system
     gluOrtho2D(-50, 50, -50, 50);
 }
+
 
 void my_setup(void)
 {
@@ -88,24 +92,13 @@ void my_setup(void)
 
 }
 
+
 void my_reshape(int w, int h)
 {
     /* define view port -- x, y, (origin is at lower left corner) width, height */
     glViewport(0, 0, min(w, h), min(w, h));
 }
 
-/*
-void my_timer(int val) {
-
-	//std::cout << planet.origin.toString() << std::endl;
-
-	glutTimerFunc(DELTA_TIME, my_timer, 0);
-	glutPostRedisplay();
-
-	
-
-	return;
-}*/
 
 void my_keyboard(unsigned char key, int x, int y)
 {
@@ -125,13 +118,9 @@ void my_keyboard(unsigned char key, int x, int y)
             break;
     }
 
-
     glutPostRedisplay();
-
-
-
-    //glutTimerFunc(DELTA_TIME, my_timer, 0);
 }
+
 
 void my_display(void)
 {
